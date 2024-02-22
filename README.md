@@ -1,3 +1,5 @@
+# ucsc 
+https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr7%3A72233434%2D72458433&hgsid=1941877242_0HuisATst6fZ53elf5YB9PXWAjiZ
 # lead snp
 track name="Lead SNP" itemRgb="On"
 
@@ -19,7 +21,23 @@ track type=bedGraph name="GWAS" visibility=full color=200,100,0 priority=20
 
 
 
+track type=bigWig name="BasGan" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a4721352e20f14e839cd70f/display?to_ext=bigwig color=51,160,43
+track type=bigWig name="NEX" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a4721353f88f1daac1a4305/display?to_ext=bigwig color=226,33,29
+track type=bigWig name="Limbic" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135672d3656b488f054/display?to_ext=bigwig color=251,154,153
+track type=bigWig name="ARC" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135d2113c0ee22afc01/display?to_ext=bigwig color=178,89,41
+track type=bigWig name="HAB" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135368898de40b5994e/display?to_ext=bigwig color=251,191,111
+track type=bigWig name="MDT" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a47213583f61075a9f16439/display?to_ext=bigwig color=251,126,2
+track type=bigWig name="DRN" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135a566336440cb4716/display?to_ext=bigwig color=202,177,214
+track type=bigWig name="RMTG" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a4721353b2796764fc14822/display?to_ext=bigwig color=127,115,173
+track type=bigWig name="VTA" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135aa4c9e194e88bcc9/display?to_ext=bigwig color=106,61,154
 
+
+# gtf 
+
+# highlight 
+#eca9cb  # i
+#a9c1ec  # i target
+#ecdda9  # candidate snp
 
 # https://usegalaxy.org
 
@@ -33,6 +51,40 @@ track type=bigWig name="MDT" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad
 track type=bigWig name="DRN" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a4721355bc30d570c5d537f/display?to_ext=bigwig color=202,177,214
 track type=bigWig name="RMTG" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135a9cc8a99037e79fe/display?to_ext=bigwig color=127,115,173
 track type=bigWig name="VTA" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135a9cc8a99037e79fe/display?to_ext=bigwig color=106,61,154
+
+# /hpc/users/songl05/PF_25BR/codes
+
+# statictics of brain specificity of abc links 
+ABC_link_stat_uniquegene.R (unique ID); ABC_link_stat.R(all)
+
+
+# validatation:
+vali_eqtl_non5.R
+
+# ldsc codes
+## to get ldsc coef and p value
+
+/sc/arion/projects/roussp01a/liting/Pf_25/LDSC_enhancer1k_isoform.r (in enhancers regulating 5' non5' and nonregulatory enhancers, respectively)
+/sc/arion/projects/roussp01a/liting/Pf_25/LDSC_promoter.r (in promoter, 5' promoter, and non5' promoter)
+
+## ldsc heatmap: 
+LDSC_enrich_heatmap_enhancer.R (enhancer)
+LDSC_enrich_heatmap_promoter.R (promoter)
+
+### enhancers and promoters
+LDSC_enrich_heatmap_ep.R   (final)
+
+
+# gwas to enhancer-target: 
+gwas_2PromoterI.R
+
+# gwas to promoter: 
+gwas_2target_1k.R
+
+# scz links (ucsc)
+scz_links.R
+get_bw.sh
+
 
 
 
