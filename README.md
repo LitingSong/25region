@@ -1,5 +1,6 @@
 # ucsc 
 https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr7%3A72233434%2D72458433&hgsid=1941877242_0HuisATst6fZ53elf5YB9PXWAjiZ
+
 # lead snp
 track name="Lead SNP" itemRgb="On"
 
@@ -11,7 +12,6 @@ track name="Candidate SNP" itemRgb="On"
 
 # isoform
 track name="Promoter Isoforms" itemRgb="On" useScore=1000
-
 
 # inter
 track type=interact name="ABC links" interactDirectional=false maxHeightPixels=200:100:50 visibility=full
@@ -59,21 +59,19 @@ ABC_link_stat_uniquegene.R (unique ID); ABC_link_stat.R(all)
 
 
 # validatation:
-vali_eqtl_non5.R
+## peak width=1000
+vali_eqtl_non5.R (for 5 and non5 links, seperately) barplot to compare 5 and non5
+combined validation (/hpc/users/songl05/PF_25BR/codes/valid_ABC_combined_eid.R) 
+
 
 # ldsc codes
 ## to get ldsc coef and p value
-
-/sc/arion/projects/roussp01a/liting/Pf_25/LDSC_enhancer1k_isoform.r (in enhancers regulating 5' non5' and nonregulatory enhancers, respectively)
-/sc/arion/projects/roussp01a/liting/Pf_25/LDSC_promoter.r (in promoter, 5' promoter, and non5' promoter)
-
-## ldsc heatmap: 
-LDSC_enrich_heatmap_enhancer.R (enhancer)
-LDSC_enrich_heatmap_promoter.R (promoter)
+## nonregulatory/active: active but not in abc link
+/sc/arion/projects/roussp01a/liting/Pf_25/LDSC_enhancer_1k.r (in enhancers regulating 5' non5' and nonregulatory enhancers, respectively)
+/sc/arion/projects/roussp01a/liting/Pf_25/LDSC_promoter_1k.r (in promoter, 5' promoter, and non5' promoter)
 
 ### enhancers and promoters
 LDSC_enrich_heatmap_ep.R   (final)
-
 
 # gwas to enhancer-target: 
 gwas_2PromoterI.R
@@ -82,9 +80,13 @@ gwas_2PromoterI.R
 gwas_2target_1k.R
 
 # scz links (ucsc)
-scz_links.R
-get_bw.sh
+scz_links.R (prepare input file for ucsc)
+get_bw.sh (now using pengfei's aws ucsc)
 
+# scz snp target gene heatmap 
+scz_combined_heatmap.R
+venn_target.R (overlap between fine regions, supple)
+pops_trait.R: distribution of pops score across different diasese
 
 
 
