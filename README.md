@@ -74,17 +74,30 @@ combined validation (/hpc/users/songl05/PF_25BR/codes/valid_ABC_combined_eid.R)
 LDSC_enrich_heatmap_ep.R   (final)
 
 # gwas to enhancer-target: 
-gwas_2PromoterI.R
+gwas_2PromoterI.R 
+gwas2_target1k.R（index and ld）
+*gwas_2target_scz_finemap.R* （finemap snp for scz）
+gwas_2target_sigwas_trait.R (significant snp for all psychiatric disorders)
+
 
 # gwas to promoter: 
 gwas_2target_1k.R
 
+# 
+
 # scz links (ucsc)
-scz_links.R (prepare input file for ucsc)
-get_bw.sh (now using pengfei's aws ucsc)
+scz_links.R (prepare input file for ucsc) index and ld
+*UCSC_link_scz_finemap.R* (prepare input file for ucsc)  finemap snp, abc max
+get_bw.sh (now using pengfei's aws ucsc) 
+
 
 # scz snp target gene heatmap 
-scz_combined_heatmap.R
+scz_combined_heatmap.R (local) index and ld
+scz_ABCMAX_heatmap.R (local) index and ld, abc max
+scz_finemap_heatmap.R (local) finemap snp, abc max
+
+
+
 venn_target.R (overlap between fine regions, supple)
 pops_trait.R: distribution of pops score across different diasese
 
