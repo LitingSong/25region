@@ -87,6 +87,7 @@ gwas_2target_1k.R
 
 # scz links (ucsc)
 scz_links.R (prepare input file for ucsc) index and ld
+trait_links.R (index and ld ) for bd or scz
 *UCSC_link_scz_finemap.R* (prepare input file for ucsc)  finemap snp, abc max
 get_bw.sh (now using pengfei's aws ucsc) 
 
