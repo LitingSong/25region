@@ -1,3 +1,11 @@
+chr18:79,843,656-79,942,420
+chr7:72,236,306-72,464,119
+chr1:2,415,168-2,481,835
+
+https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A79843656%2D79942420&hgsid=2011572880_SS6Gi2CPTKwkh8Hk1NM7wFP25K9g
+
+ https://genome.ucsc.edu/s/litingsong/hg38
+
 # ucsc 
 https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr7%3A72233434%2D72458433&hgsid=1941877242_0HuisATst6fZ53elf5YB9PXWAjiZ
 
@@ -18,18 +26,6 @@ track type=interact name="ABC links" interactDirectional=false maxHeightPixels=2
 
 # gwas
 track type=bedGraph name="GWAS" visibility=full color=200,100,0 priority=20
-
-
-
-track type=bigWig name="BasGan" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a4721352e20f14e839cd70f/display?to_ext=bigwig color=51,160,43
-track type=bigWig name="NEX" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a4721353f88f1daac1a4305/display?to_ext=bigwig color=226,33,29
-track type=bigWig name="Limbic" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135672d3656b488f054/display?to_ext=bigwig color=251,154,153
-track type=bigWig name="ARC" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135d2113c0ee22afc01/display?to_ext=bigwig color=178,89,41
-track type=bigWig name="HAB" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135368898de40b5994e/display?to_ext=bigwig color=251,191,111
-track type=bigWig name="MDT" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a47213583f61075a9f16439/display?to_ext=bigwig color=251,126,2
-track type=bigWig name="DRN" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135a566336440cb4716/display?to_ext=bigwig color=202,177,214
-track type=bigWig name="RMTG" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a4721353b2796764fc14822/display?to_ext=bigwig color=127,115,173
-track type=bigWig name="VTA" bigDataUrl=https://usegalaxy.org/api/datasets/f9cad7b01a472135aa4c9e194e88bcc9/display?to_ext=bigwig color=106,61,154
 
 
 # gtf 
@@ -76,8 +72,8 @@ LDSC_enrich_heatmap_ep.R   (final)
 # gwas to enhancer-target: 
 gwas_2PromoterI.R 
 gwas2_target1k.R（index and ld）
-*gwas_2target_scz_finemap.R* （finemap snp for scz）
-gwas_2target_sigwas_trait.R (significant snp for all psychiatric disorders)
+*1.gwas_2target_scz_finemap.R* （finemap snp for scz）
+*supp1.gwas_2target_sigwas_trait.R* (significant snp for all psychiatric disorders)
 
 
 # gwas to promoter: 
@@ -88,14 +84,14 @@ gwas_2target_1k.R
 # scz links (ucsc)
 scz_links.R (prepare input file for ucsc) index and ld
 trait_links.R (index and ld ) for bd or scz
-*UCSC_link_scz_finemap.R* (prepare input file for ucsc)  finemap snp, abc max
+*2.UCSC_link_scz_finemap.R* (prepare input file for ucsc)  finemap snp, abc max
 get_bw.sh (now using pengfei's aws ucsc) 
 
 
 # scz snp target gene heatmap 
 scz_combined_heatmap.R (local) index and ld
 scz_ABCMAX_heatmap.R (local) index and ld, abc max
-scz_finemap_heatmap.R (local) finemap snp, abc max
+*3.scz_finemap_heatmap.R* (local) finemap snp, abc max
 
 
 
