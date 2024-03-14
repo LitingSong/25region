@@ -1,6 +1,7 @@
 chr18:79,843,656-79,942,420
 chr7:72,236,306-72,464,119
 chr1:2,415,168-2,481,835
+chr17:40,046,026-40,068,248
 
 https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A79843656%2D79942420&hgsid=2011572880_SS6Gi2CPTKwkh8Hk1NM7wFP25K9g
 
