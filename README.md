@@ -62,28 +62,45 @@ LDSC_enrich_heatmap_ep.R   (final)
 
 # step 1: gwas to enhancer-target: 
 gwas_2PromoterI.R 
+
 gwas2_target1k.R（index and ld）
+
 **1.gwas_2target_scz_finemap.R** （finemap snp for scz）
+
 **1.gwas_2target_BIP_Finemap.R**
+
 **0.get_sig_gwas.R -> 1.gwas_2target_sigwas_trait.R** (significant snp for all psychiatric disorders; both get target and statitics analysis)
 
 # gwas to promoter: 
+
 gwas_2target_1k.R
 
 
 # step 2: snp target gene heatmap 
+
 ## 2.1 scz snp target gene heatmap 
+
 scz_combined_heatmap.R (local) index and ld
+
 scz_ABCMAX_heatmap.R (local) index and ld, abc max
+
 **scz_finemap_heatmap.R** (local) finemap snp, abc max
 
+
 ## 2.2 bip snp target gene heatmap 
+
 **bip_finemap_heatmap.R**
 
 
 # step 3: UCSC
+
 scz_links.R (prepare input file for ucsc) index and ld
+
 trait_links.R (index and ld ) for bd or scz
+
 **3.1 UCSC_link_scz_finemap.R** (prepare input file for ucsc)  finemap snp, abc max
+
 **3.2 UCSC_link_bip_finemap.R**
+
 get_bw.sh (now using pengfei's aws ucsc) 
+
