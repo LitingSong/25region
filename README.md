@@ -13,10 +13,15 @@
 
 
 # 3. ldsc codes (Fig 4d-e & Fig S16)
+
 ## 3.1 to get ldsc coef and p value
+
 ## nonregulatory/active: active but not in abc link
-**LDSC_enhancer_1k.r** (in enhancers regulating 5' non5' and nonregulatory enhancers, respectively) (Fig S16)
+
+**LDSC_enhancer_1k.r** (in enhancers regulating 5', non5' and nonregulatory enhancers, respectively) (Fig S16)
+
 **LDSC_promoter_1k.r** (in promoter, 5' promoter, and non5' promoter) (Fig S16)
+
 
 ## 3.2 enhancers and promoters heatmap (Fig 4d-e )
 LDSC_enrich_heatmap_ep.R   
@@ -33,11 +38,11 @@ LDSC_enrich_heatmap_ep.R
 
 ## step 2: snp target gene heatmap  
 
-## 4.2.1 scz snp target gene heatmap 
+### 4.2.1 scz snp target gene heatmap 
 
 **scz_finemap_heatmap.R** (local) finemap snp, abc max (Fig 5A-C )
 
-## 4.2.2 bip snp target gene heatmap 
+### 4.2.2 bip snp target gene heatmap 
 
 **bip_finemap_heatmap.R** (local) finemap snp, abc max (Fig 6A-C )
 
