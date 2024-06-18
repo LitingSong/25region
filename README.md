@@ -1,5 +1,8 @@
 # Codes for BI project (Fig 4-6, Fig S13-16,S19-25)
 
+codes: NC_codes
+source data: NC_data
+
 # 1. statictics of brain specificity of abc links (Fig 4a-c & Fig S13)
 
 **ABC_link_stat.R**
