@@ -1,6 +1,7 @@
 # Codes for BI project (Fig 4-6, Fig S13-16,S19-25)
 
 codes: NC_codes
+
 source data: NC_data
 
 # 1. statictics of brain specificity of abc links (Fig 4a-c & Fig S13)
@@ -37,12 +38,15 @@ source data is the output of step 3.1.
 ## step 1: gwas to enhancer-target: 
 
 **4.1.1. gwas_2target_scz_finemap.R** （finemap snp for scz）
+
 source data: ABC_summary.Rdata; finemap: scz_finemap.tsv; closet gene: answer.sort.bed
 
 **4.1.2 gwas_2target_BIP_Finemap.R** （finemap snp for bip）
+
 source data: ABC_summary.Rdata; finemap: daner_bip_pgc3_only_finemap_only_finemap_all.txt.gz; closet gene: gwas_finemap_bip.answer.bed
 
 **4.1.3 get_sig_gwas.R & gwas_2target_sigwas_trait.R & annovar.sh & find.closest.sh** (significant snp for all psychiatric disorders; both get target and statitics analysis, Fig S19-25)
+
 gwas summary: data can be download based on metadata.tsv
 
 ## step 2: snp target gene heatmap  
@@ -50,11 +54,13 @@ gwas summary: data can be download based on metadata.tsv
 ### 4.2.1 scz snp target gene heatmap 
 
 **scz_finemap_heatmap.R** (local) finemap snp, abc max (Fig 5A-C )
+
 source data: SCZ_finemap_final_link.RData; scz_finemap.tsv; added_ridge_sz3.preds
 
 ### 4.2.2 bip snp target gene heatmap 
 
 **bip_finemap_heatmap.R** (local) finemap snp, abc max (Fig 6A-C )
+
 source data: ABC_summary.Rdata; finemap: daner_bip_pgc3_only_finemap_only_finemap_all.txt.gz; closet gene: gwas_finemap_bip.answer.bed; pops: added_ridge_bip2.preds
 
 
