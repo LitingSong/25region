@@ -34,10 +34,10 @@ source data: ABC_summary.Rdata; 'brain_Rg'.bed
 LDSC_enrich_heatmap_ep.R   
 source data is the output of step 3.1.
 
-# 4.Finemap (Fig 5 and Fig 6)
+# 4. Finemap (Fig 5 and Fig 6)
 ## step 1: gwas to enhancer-target: 
 
-**4.1.1. gwas_2target_scz_finemap.R** （finemap snp for scz）
+**4.1.1 gwas_2target_scz_finemap.R** （finemap snp for scz）
 
 source data: ABC_summary.Rdata; finemap: scz_finemap.tsv; closet gene: answer.sort.bed
 
