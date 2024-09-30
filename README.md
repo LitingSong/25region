@@ -13,9 +13,8 @@ source data: ABC_summary.Rdata
 
 # 2. validatation (Fig S14 & S15)
 
-**vali_eqtl_non5.R** (for 5 and non5 links, seperately) barplot to compare 5 and non5 (Fig S15)
+**vali_eqtl_non5.R** (for 5 and non5 links, seperately) barplot to compare 5 and non5 (Fig S15) combined validation (Fig S14)
 
-**valid_ABC_combined_eid.R** combined validation (Fig S14)
 
 source data: ABC_summary.Rdata; biccn ** pos.bedpe; GTEx_vcf. ** _eqtls.txt.gz
 
