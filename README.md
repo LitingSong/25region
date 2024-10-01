@@ -63,12 +63,14 @@ source data: SCZ_finemap_final_link.RData; scz_finemap.tsv; added_ridge_sz3.pred
 source data: ABC_summary.Rdata; finemap: daner_bip_pgc3_only_finemap_only_finemap_all.txt.gz; closet gene: gwas_finemap_bip.answer.bed; pops: added_ridge_bip2.preds
 
 
+
 ## step 3: UCSC
 
 **4.3.1 UCSC_link_scz_finemap.R** (prepare input file for ucsc)  finemap snp, abc max
 
 **4.3.2 UCSC_link_bip_finemap.R**
 
+**4.3.3 exp_isoform.R** expression of isoforms
 
 
 
